@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    :root{
+      /* Tokens */
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+
+      /* Contextual Tokens */
+      --card-bg: var(--white);
+      --body-bg: var(--light-gray);
+      --font-h1-color: var(--dark-blue);
+      --font-body-color: var(--grayish-blue);
+    }
+
+    h1, p {
+      all: unset;
+    }
+
+    body {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: var(--body-bg);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      max-inline-size: 300px;
+
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties */
+      padding-inline: 1rem;
+      padding-block: 1rem;
+      border-radius: 1rem;
+    }
+
+    .card-image {
+      max-inline-size: 100%;
+      max-block-size: 100%;
+      border-radius: 1rem;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      /* https://www.youtube.com/watch?v=N5wpD9Ov_To */
+      padding: 1.5rem;
+    }
+
+    .card-content h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--font-h1-color);
+      margin-bottom: 1rem;
+    }
+
+    .card-content p {
+      font-size: .9rem;
+      color: var(--font-body-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <img class="card-image" src="images/image-qr-code.png" alt="">
+    </div>
+    <section class="card-content">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </section>
+  </div>
+</body>
+</html>
